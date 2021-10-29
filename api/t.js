@@ -1,4 +1,4 @@
 module.exports = (req, res) => {
-  const { name = 'World' } = req.query;
-  res.status(200).send(`Hello ${name}!`);
+  const r = _.random(0, 100);
+  res.status(200).json({'name': 'yoda', 'r': r})
 };
